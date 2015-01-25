@@ -436,6 +436,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 <div class="content">
+</div>
 
 
 <div class="container" id='myPR'>
@@ -452,13 +453,13 @@ input[type="range"]::-webkit-slider-thumb {
   </div>
 
 
-</div>
+
 <div class="container">
     <h2>давай крути</h2>
     <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber;b(flevel.valueAsNumber)" >
   <input name="flevel" id="flying" type="range" min="0" max="83" value="0">
   <output for="flying" name="level"></output>
-</form>
+    </form>
   </div>
 
 
@@ -491,7 +492,7 @@ var b = function(num)
 
   var Adata;
   Adata=num;
-  document.getElementById("myPR").innerHTML='<img src='+data[Adata]['link']+' /><h2 on>'+'<button onclick="b(gRI(0,data.length-1))" class="btn cyan block">запомнил далее</button>'+'</h2><a onclick="javascript:b(one,0)" class="btn green block">'+data[Adata]['name']+'</a><a onclick="javascript:b(two,1)"  class="btn purple block">'+data[Adata]['autor']+'</a><a onclick="javascript:b(three,2)" class="btn yellow block">'+data[Adata]['date']+'</a>';
+  document.getElementById("myPR").innerHTML='<pre><img src='+data[Adata]['link']+' /></pre><h2 on>'+'<button onclick="b(gRI(0,data.length-1))" class="btn cyan block">запомнил далее</button>'+'</h2><a onclick="javascript:b(one,0)" class="btn green block">'+data[Adata]['name']+'</a><a onclick="javascript:b(two,1)"  class="btn purple block">'+data[Adata]['autor']+'</a><a onclick="javascript:b(three,2)" class="btn yellow block">'+data[Adata]['date']+'</a>';
 };
 
 
