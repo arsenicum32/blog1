@@ -1,78 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html class="lang="en"">
 
 <head>
 
   <meta charset="UTF-8">
 
-  <title>CodePen - final keycube</title>
+  <title>CodePen - unisicle site</title>
 
-  <title>keycube</title>
+  <meta charset="utf-8">
+    <title>Template &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <link rel='stylesheet prefetch' href='css/vhpll.css'>
-<link rel='stylesheet prefetch' href='css/zyamqr.css'>
-<link rel='stylesheet prefetch' href='css/qevyjy.css'>
-<link rel='stylesheet prefetch' href='css/rnjybk.css'>
-<link rel='stylesheet prefetch' href='css/qevomy.css'>
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 4355880});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61116742-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+  <link rel="stylesheet" type="text/css" href="/resources/tutorial/css/example.css">
+
+  <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+<link rel='stylesheet prefetch' href='https://bootswatch.com/lumen/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://bootswatch.com/lumen/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='css/raojlx.css'>
+
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-  <!-- Included from http://codepen.io/Arsenicum32/pen/qEVomy -->
-[[http://codepen.io/Arsenicum32/pen/qEVyjy]]]
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54d7cfb65f533d0c" async="async"></script>
-
-<header>
-<div class="header">
-	<h1 onclick='shwcrd=!shwcrd;showHide(shwcrd);'>keycube</h1>
-  <div id="bar">
-  <div class="icon icon-pause" onclick='$(this).toggleClass("icon-pause");$(this).toggleClass("icon-play");'></div>
-  <div class="icon icon-comment" onclick='$(this).toggleClass("icon-comment");$(this).toggleClass("icon-plus");'></div>
-  <div class="icon icon-video"></div></div>
-</div>
-  <a href="#" class="btn red mini" onclick='shwcrd=!shwcrd;showHide(shwcrd);'>предзаказ</a>
-  <div class="wrapper cards">
-  <div class="containerC">
-    <div class="card">
-      <div class="front">
-        <input type='email' max='30' placeholder='ваш email' name='email' required></input>
-      <button class='btn red normal' id='preorder'>оставить предзаказ</button>
+  <div class="container-narrow">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="muted">Project name</h3>
       </div>
-      <div class="back"></div>
-    </div>
+
+      <div class="jumbotron" id='first'>
+        <h1>Хотите кататься на <a onclick='showuni()'>уницикле</a>?</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <div class="btn-group">
+        <button class="btn dropdown-toggle btn-success" id='want' data-toggle="dropdown" href="#">
+    хочу
+  </button><button type="button" class="btn btn-default" id='can'>умею</button><input type='text'  style='position:absolute;opacity:0;' id='CAN' name='want to take a bike?'/>
+</div>
+      </div>     
+      <div class="jumbotron" id='hour'>
+        <p class="lead">Сколько часов в неделю вы готовы на это потратить?</p>
+        <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><p id='Mact'>пару часиков</p></h3>
+  </div>
+  <div class="panel-body">
+    <form oninput="hi()">
+    <input type="range" value="2" min="0" max="7" step="1" id='Msen' name='spend'/></form>
   </div>
 </div>
+        <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default" onclick='back()'>назад</button>
+  <button type="button" class="btn btn-default" onclick='next()'>далее</button>
+        </div>
 
-</header>
-<section >
-  <h1 id='wr'>надоело печатать на клавиатуре?</h1>
-	</section >
-<div class="content">
-  <kbd id='dkey'>д</kbd><kbd id='akey'>а</kbd>
- </div> 
-   <section style='background-image:url("https://dl.dropboxusercontent.com/u/8429681/Images/Untitled-3.svg")'>
-     <h1 id='keycube'/>keycube</h1>
-   </section>
-
-<div class="header">
-	<p>кубик, который умеет печатать</p>
+          </div>
+      <div class="jumbotron" id='master'>
+        <p class="lead">Как круто вы катайтетесь?</p>
+        <div class="panel panel-default">
+        <div class="panel-heading">
+        <h3 class="panel-title"><p id='Sact'>уровень вашего мастерства...</p></h3>
+        </div>
+        <div class="panel-body"><form oninput="hi()">
+    <input type="range" value="2" min="0" max="7" step="1" id='Ssen' name='skill'/></form>
+  </div>
 </div>
-<div class="header">
+       <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default" onclick='back()'>назад</button>
+  <button type="button" class="btn btn-default" onclick='next()'>далее</button>
+        </div>        
 
-</div>
+          </div>
+       <div class="jumbotron" id='finish'>
+         <p class="lead">Войдите через соц сеть - получите шоколадку</p>
 
-<section>
-</section>
-<footer>
-</footer>
-<!-- end include -->
+         <div id="vk_auth"></div>
+<script type="text/javascript">
+VK.Widgets.Auth("vk_auth", {width: "200px", onAuth: function(data) {
+ //alert('user '+data['uid']+' authorized');
+ document.getElementById('profile').value = 'vk.com/id'+data['uid'];
+  sucsess();
+} });
+</script>
+         <input id='profile' name='social'></input>     
+  <button class="btn btn-default dropdown-toggle" type="submit" id="submit" disabled onclick='go();thankyou();'>отправить ответ</button>
+       </div>
+<div class="jumbotron" id='thankyou'>
+  <h1>Спасибо!</h1>
+  </div>
+      <hr>
 
-  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-  <script src='js/qevmbq.js'></script>
-<script src='js/qevomy.js'></script>
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; Company 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
 
   <script src="js/index.js"></script>
 
