@@ -65,7 +65,7 @@ function sucsess(){
 }
 
 function go(){
-  var info = $.now().ToString("yyyy-MM-dd hh:mm:ss tt")+' '+navigator['platform']+' src:'+screen['width']+'x'+screen['height'];
+  var info = $.now()+' '+navigator['platform']+' src:'+screen['width']+'x'+screen['height'];
   if($('#CAN').val()=='хочу'){
     messagesRef.push({user_info:info,likeidea:$('#CAN').val(), want:$('#Mact').text(),social:$('#profile').val()});
   }else{
