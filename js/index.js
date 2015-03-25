@@ -15,9 +15,9 @@ $('#can').click(function(){
   $('#master').show();
   $('#CAN').val('умею');
 })
-alert($(window).width());
-//if ($(window).width())
-//$('#bigQ').replaceWith("<li class='item'>Тест</li>");
+if($(window).width()<400){
+ $('#bigQ').replaceWith("<h2 id='bigQ'>Хотите кататься на <a onclick='showuni()'>уницикле</a>?</h2>");
+}
 
 function back(){
   $('#hour').hide();
