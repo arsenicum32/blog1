@@ -15,8 +15,9 @@ $('#can').click(function(){
   $('#master').show();
   $('#CAN').val('умею');
 })
-
-$('#bigQ').css('font-size',$(window).width()*500/1280+'%');
+alert($(window).width());
+//if ($(window).width())
+//$('#bigQ').replaceWith("<li class='item'>Тест</li>");
 
 function back(){
   $('#hour').hide();
