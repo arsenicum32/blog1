@@ -16,6 +16,8 @@ $('#can').click(function(){
   $('#CAN').val('умею');
 })
 
+$('#bigQ').css('font-size',$(window).width()*500/1280+'%');
+
 function back(){
   $('#hour').hide();
   $('#master').hide();
