@@ -15,8 +15,8 @@ $('#can').click(function(){
   $('#master').show();
   $('#CAN').val('умею');
 })
-if($(window).width()<400){
- $('#bigQ').replaceWith("<h2 id='bigQ'>Хотите кататься на <a onclick='showuni()'>уницикле</a>?</h2>");
+if($(window).width()>400){
+ $('#bigQ').replaceWith("<h1 id='bigQ'>Хотите кататься на <a onclick='showuni()'>уницикле</a>?</h1>");
 }
 
 function back(){
