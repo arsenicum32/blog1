@@ -1,0 +1,39 @@
+#wheel{
+/*-webkit-animation: spin 3s 0 infinite linear;
+-moz-animation: spin 3s 0 infinite linear;
+animation: spin 3s 0 infinite linear;
+position: relative;
+-moz-transform-style: preserve-3d;
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;*/
+width:100px;
+height:100px;
+}
+/*
+@-webkit-keyframes spin {
+0% {
+-moz-transform: rotate(0deg) ;
+-ms-transform: rotate(0deg) ;
+-webkit-transform: rotate(0deg) ;
+transform: rotate(0deg) ;
+}
+95% {
+-moz-transform: rotate(0deg) ;
+-ms-transform: rotate(0deg) ;
+-webkit-transform: rotate(0deg) ;
+transform: rotate(0deg) ;
+}
+97.5% {
+-moz-transform: rotate(180deg) ;
+-ms-transform: rotate(180deg) ;
+-webkit-transform: rotate(180deg) ;
+transform: rotate(180deg) ;
+}
+100% {
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg) ;
+-webkit-transform: rotate(360deg) ;
+transform: rotate(360deg) ;
+}
+}
+*/
