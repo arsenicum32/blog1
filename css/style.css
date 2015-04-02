@@ -85,6 +85,8 @@ input[type="range"]::-webkit-slider-thumb{
 
 #first{
   background: url(../background.png) center no-repeat;
+  /* -webkit-filter: blur(3px); */
+  /* filter: blur(3px); */
 }
 #profile{
   opacity:0;
