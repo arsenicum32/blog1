@@ -65,7 +65,7 @@ body {
         float:left;
         margin:0;
         width:33vw;
-        min-width:350px;
+        min-width:150px;
         height:100vh;
         z-index:999;
       }
