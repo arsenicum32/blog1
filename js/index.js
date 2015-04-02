@@ -71,7 +71,7 @@ function go(){
   }else{
     messagesRef.push({user_info:info,likeidea:$('#CAN').val(), skill:$('#Sact').text(),social:$('#profile').val()});
   }
-  
+
 }
 //range in master
 //$('#Ssen').on( "slidechange", function(event, ui) {
@@ -84,7 +84,3 @@ var hi = function(){
   $('#Sact').text( perz[ $('#Ssen').val()]);
   $('#Mact').text( perzM[ $('#Msen').val()]);
 };
-
-
-
-
