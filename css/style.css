@@ -88,6 +88,11 @@ input[type="range"]::-webkit-slider-thumb{
   /* -webkit-filter: blur(3px); */
   /* filter: blur(3px); */
 }
+#first button{
+  margin-top: 15vw;
+  /* -webkit-filter: blur(3px); */
+  /* filter: blur(3px); */
+}
 #profile{
   opacity:0;
   position:absolute;
