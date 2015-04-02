@@ -4,6 +4,10 @@ $('#hour').hide();
 $('#master').hide();
 $('#finish').hide();
 $('#thankyou').hide();
+$('#menu').hide();
+
+var changing = 0;
+
 
 $('#want').click(function(){
   $('#first').hide();
@@ -19,7 +23,22 @@ $('#can').click(function(){
   $('#bigQ').css('font-size','250%');
   //$('#bigQ').replaceWith("<h1 id='bigQ'>Хотите кататься на <a onclick='showuni()'>уницикле</a>?</h1>");
  }
+function menunav()
+{
+  if(!changing)
+  {
+    $('#menu').show(200);
+    $('.jumbotron').addClass('blur');
+    $('body').css('overflow','hidden');
+  }else{
+    $('#menu').hide(200);
+    $('.jumbotron').removeClass('blur');
+    $('body').css('overflow','auto');
+  }
 
+  changing = 1 - changing;
+
+}
 function back(){
   $('#hour').hide();
   $('#master').hide();

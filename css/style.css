@@ -52,6 +52,23 @@ body {
       .marketing p + h4 {
         margin-top: 28px;
       }
+      .blur
+      {
+        /*-webkit-filter: blur(3px);
+        filter: blur(3px);*/
+        z-index:-1;
+        visibility: hidden;
+      }
+
+      #menu{
+        background:rgb(233,233,233);
+        float:left;
+        margin:0;
+        width:33vw;
+        min-width:350px;
+        height:100vh;
+        z-index:999;
+      }
 
 #me{
   width:100px;
