@@ -72,6 +72,9 @@ body {
       #menu ul a:hover{
         background:rgb(233,233,233);
       }
+      .footer a{
+        float:left;
+      }
       .footer p{
         margin-left: 5%;
       }

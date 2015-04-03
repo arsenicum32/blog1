@@ -5,6 +5,7 @@ $('#master').hide();
 $('#finish').hide();
 $('#thankyou').hide();
 $('#menu').hide();
+$('#friends').hide();
 
 var changing = 0;
 
@@ -58,6 +59,10 @@ function next(){
   //$('#social2').val($('#profile').val());
 }
 
+function friends()
+{
+  $('#friends').show(200);
+}
 //btn-success
 function showuni(){
   $("#me").remove();
