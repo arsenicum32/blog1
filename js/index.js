@@ -8,6 +8,7 @@ $('#menu').hide();
 
 var changing = 0;
 
+//$('body').scrollspy({ target: '.jumbotron' });
 
 $('#want').click(function(){
   $('#first').hide();

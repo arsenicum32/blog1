@@ -61,14 +61,21 @@ body {
       }
 
       #menu{
-        background:rgb(233,233,233);
+        /*background:rgb(233,233,233);*/
         float:left;
         margin:0;
-        width:42vw;
-        min-width:150px;
+        width:50vw;
+        /*min-width:400px;*/
         height:100vh;
         z-index:999;
       }
+      #menu ul a:hover{
+        background:rgb(233,233,233);
+      }
+      .footer p{
+        margin-left: 5%;
+      }
+
 
 #me{
   width:100px;

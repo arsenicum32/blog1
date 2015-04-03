@@ -57,11 +57,9 @@
 </head>
 
 <body>
-
-
-  <div class="row-fluid marketing" id='menu'>
-    <h1 class="text-center">hello</h1>
-    <div class="col-lg-6">
+  <div class="row-fluid marketing" id='menu'><!-- visible-xs -->
+    <h1 class="text-center hidden-xs">hello</h1>
+    <div class="col-lg-6 hidden-xs">
          <h4>Subheading</h4>
          <p>Donec id elit non mi porta gravida at eget metus.
             Maecenas faucibus mollis interdum.</p>
@@ -76,7 +74,7 @@
          <span class="label label-success">Success</span>
     </div>
 
-       <div class="col-lg-6">
+       <div class="col-lg-6 visible-lg">
          <h4>Subheading</h4>
          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
          <span class="label label-info">Info</span>
@@ -87,7 +85,14 @@
          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
          <span class="label label-danger">Danger</span>
        </div>
+
+       <ul class="nav nav-pills nav-stacked visible-xs">
+         <li class="active"><a href="#">Главная</a></li>
+         <li><a href="#">Профиль</a></li>
+         <li><a href="#">Сообщение</a></li>
+         </ul>
   </div>
+
   <a class="navbar-brand" href="#" onclick='menunav()'>
         <img alt="Brand" id='wheel' src="logo.svg">
   </a>
@@ -98,6 +103,9 @@
       <div class="jumbotron" id='first'>
         <h1 id='bigQ'>Хотите кататься на <a onclick='showuni()'>уницикле</a>?</h1>
         <p class="lead">В ВШЭ стартует новый проект - школа унисайклинга. Оставьте свой отзыв.</p>
+          <h4>Катаешься на велосипеде?</h4>
+          <p>А видел тех странных чуваков на улице, которые ездят на одном колесе и при этом отлично справляются с управлением??? Хочешь? МЫ НАУЧИМ!</p>
+
         <div class="btn-group">
         <button class="btn dropdown-toggle btn-success" id='want' data-toggle="dropdown" href="#">
     хочу
@@ -155,18 +163,8 @@ VK.Widgets.Auth("vk_auth", {width: "200px", onAuth: function(data) {
   <h1>Спасибо!</h1>
   </div>
       <hr>
-
-      <div class="row-fluid marketing">
-        <div class="span6">
-          <h4>Катаешься на велосипеде?</h4>
-          <p>А видел тех странных чуваков на улице, которые ездят на одном колесе и при этом отлично справляются с управлением??? Хочешь? МЫ НАУЧИМ!</p>
-        </div>
-      </div>
-
-      <hr>
-
       <div class="footer">
-        <p>&copy; Arsenicum32 2015</p>
+        <p>&copy; унивышка 2015</p>
       </div>
      <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
