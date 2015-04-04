@@ -7,6 +7,13 @@ $('#thankyou').hide();
 $('#menu').hide();
 $('#friends').hide();
 
+$('#school').hide();
+$('#answer').hide();
+$('#CONTACT').hide();
+$('#blog').hide();
+$('#events').hide();
+$('#FAQ').hide();
+
 var changing = 0;
 
 //$('body').scrollspy({ target: '.jumbotron' });
@@ -40,6 +47,18 @@ function menunav()
 
   changing = 1 - changing;
 
+}
+
+function listmenu( $me )
+{
+  $('#school').hide();
+  $('#answer').hide();
+  $('#CONTACT').hide();
+  $('#blog').hide();
+  $('#events').hide();
+  $('#FAQ').hide();
+  $('#first').hide();
+  $me.show();
 }
 function back(){
   $('#hour').hide();

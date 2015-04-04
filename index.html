@@ -87,21 +87,27 @@
        </div>
 
        <ul class="nav nav-pills nav-stacked visible-xs">
-         <li class="active"><a href="#">вопрос ребром</a></li>
-         <li><a href="#">о школе</a></li>
-         <li><a href="#">блог</a></li>
-         <li><a href="#">события</a></li>
-         <li><a href="#">FAQ</a></li>
+         <li class="active" onclick='listmenu( $("#first") );menunav();' ><a href="#">вопрос ребром</a></li>
+         <li onclick='listmenu( $("#school") );menunav();'><a href="#">о школе</a></li>
+         <li onclick='listmenu( $("#answer") );menunav();'><a href="#">про унисайклинг</a></li>
+         <li onclick='listmenu( $("#CONTACT") );menunav();'><a href="#">контакты</a></li>
+         <li onclick='listmenu( $("#blog") );menunav();'><a href="#">блог</a></li>
+         <li onclick='listmenu( $("#events") );menunav();'><a href="#">события<span class="badge pull-right">today</span></a></li>
+         <li onclick='listmenu( $("#FAQ") );menunav();'><a href="#">FAQ</a></li>
          </ul>
   </div>
-
   <a class="navbar-brand" href="#" onclick='menunav()'>
         <img alt="Brand" id='wheel' src="logo.svg">
   </a>
-  <!--
-  <div class="container-narrow">
-    <div class="masthead">
-    </div>  -->
+  
+  <div class="jumbotron" id='school'><h1>О школе</h1></div>
+  <div class="jumbotron" id='answer'><h1>про унисайклинг</h1></div>
+  <div class="jumbotron" id='CONTACT'><h1>контакты</h1></div>
+  <div class="jumbotron" id='blog'><h1>блог</h1></div>
+  <div class="jumbotron" id='events'><h1>события</h1></div>
+  <div class="jumbotron" id='FAQ'><h1>FAQ</h1></div>
+
+
       <div class="jumbotron" id='first'>
         <h1 id='bigQ'>Хотите кататься на <a onclick='showuni()'>уницикле</a>?</h1>
         <p class="lead">В ВШЭ стартует новый проект - школа унисайклинга. Оставьте свой отзыв.</p>
