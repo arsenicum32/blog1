@@ -69,7 +69,7 @@ function loadblog(loaded)
   }
 
 }
-function FAQload(loaded) 
+function FAQload(loaded)
 {
   if(loaded){
     HelpLoading2 = false;
@@ -77,11 +77,9 @@ function FAQload(loaded)
              success: function (obj) { //var obj = jQuery.parseJSON(data);
             for ( var i =0; i< obj.wr.length ; i++)
                 {
-                  $('#FAQpanel').append('<div class="panel-heading">
-                    <h3 class="panel-title">'+obj.FAQ[i].ask+'</h3>
-                  </div>
-                  <div class="panel-body">' + obj.FAQ[i].answer +'</div>'
-                  );
+                  $('#FAQpanel').append('<div class="panel-heading"><h3 class="panel-title">'
+                  +obj.FAQ[i].ask+'</h3></div><div class="panel-body">'
+                  + obj.FAQ[i].answer +'</div>');
                 }
           }})
 
