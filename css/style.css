@@ -78,6 +78,9 @@ body {
       .footer p{
         margin-left: 5%;
       }
+      #listofblog li:hover{
+         background: rgb(235,60,50);
+      }
 
 
 #me{
