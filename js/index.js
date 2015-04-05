@@ -60,7 +60,7 @@ function loadblog(loaded)
                   $('#listofblog').append('<li class="list-group-item"><h3>'
                   +obj.wr[i].h3+'<small>'
                   +obj.wr[i].small
-                  +'</small></h3><span class="label label-danger" onclick="generatehtml('+obj.wr[i].html+')">читать</span><small>'
+                  +'</small></h3><span class="label label-danger" onclick="generatehtml('+obj.wr[i].html.toString()+')">читать</span><small>'
                   +obj.wr[i].des+'</small></li>');
                 }
           }})
