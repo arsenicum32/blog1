@@ -91,7 +91,7 @@
          <li onclick='listmenu( $("#school") );menunav();'><a href="#">о школе</a></li>
          <li onclick='listmenu( $("#answer") );menunav();'><a href="#">про унисайклинг</a></li>
          <li onclick='listmenu( $("#CONTACT") );menunav();'><a href="#">контакты</a></li>
-         <li onclick='listmenu( $("#blog") );menunav();'><a href="#">блог</a></li>
+         <li onclick='listmenu( $("#blog") );menunav();loadblog(HelpLoading);'><a href="#">блог</a></li>
          <li onclick='listmenu( $("#events") );menunav();'><a href="#">события<span class="badge pull-right">today</span></a></li>
          <li onclick='listmenu( $("#FAQ") );menunav();'><a href="#">FAQ</a></li>
          </ul>
@@ -99,11 +99,13 @@
   <a class="navbar-brand" href="#" onclick='menunav()'>
         <img alt="Brand" id='wheel' src="logo.svg">
   </a>
-  
+
   <div class="jumbotron" id='school'><h1>О школе</h1></div>
   <div class="jumbotron" id='answer'><h1>про унисайклинг</h1></div>
   <div class="jumbotron" id='CONTACT'><h1>контакты</h1></div>
-  <div class="jumbotron" id='blog'><h1>блог</h1></div>
+  <div class="jumbotron" id='blog'><h1>блог</h1>
+    <ul class="list-group" id='listofblog'></ul>
+  </div>
   <div class="jumbotron" id='events'><h1>события</h1></div>
   <div class="jumbotron" id='FAQ'><h1>FAQ</h1></div>
 

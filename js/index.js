@@ -15,6 +15,7 @@ $('#events').hide();
 $('#FAQ').hide();
 
 var changing = 0;
+var HelpLoading = true;
 
 //$('body').scrollspy({ target: '.jumbotron' });
 
@@ -46,6 +47,26 @@ function menunav()
   }
 
   changing = 1 - changing;
+
+}
+function loadblog(loaded)
+{
+  if(loaded){
+    HelpLoading = false;
+    ($.ajax({url: 'data/file.json', //http://arsenicum32.github.io/blog1/
+             success: function (data) { var obj = jQuery.parseJSON(data);
+            for ( var i =0; i< obj.wr.length ; i++)
+                {
+                  $('#listofblog').append('<li class="list-group-item"><h3>'
+                  +obj.wr[i].h3+'<small>'
+                  +obj.wr[i].small
+                  +'</small></h3><small>'
+                  +obj.wr[i].des+'</small></li>');
+                }
+          }})
+
+  );
+  }
 
 }
 
