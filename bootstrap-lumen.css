@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Anonymous+Pro&subset=latin,cyrillic");
+@import url("font.ttf");
 /*!
  * bootswatch v3.3.4+1
  * Homepage: http://bootswatch.com
@@ -7,6 +7,11 @@
  * Based on Bootstrap
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+@font-face {
+    font-family:'Anonymous Pro'; /* Гарнитура шрифта */
+    src: url(font.ttf); /* Путь к файлу со шрифтом */
+}
 html {
   font-family: 'Anonymous Pro';
   -ms-text-size-adjust: 100%;
@@ -1084,7 +1089,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Anonymous Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;

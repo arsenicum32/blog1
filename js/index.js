@@ -15,7 +15,7 @@ $('#events').hide();
 $('#FAQ').hide();
 
 var changing = 0;
-var HelpLoading = true; var HelpLoading2 = true;
+var HelpLoading = true; var HelpLoading2 = true,var HelpLoading3 = true;
 
 //$('body').scrollspy({ target: '.jumbotron' });
 
@@ -80,6 +80,30 @@ function FAQload(loaded)
                   $('#FAQpanel').append('<div class="panel-heading"><h3 class="panel-title">'
                   +obj.FAQ[i].ask+'</h3></div><div class="panel-body">'
                   + obj.FAQ[i].answer +'</div>');
+                }
+          }})
+
+  );
+  }
+}
+function loadevents(loaded)
+{
+  if(loaded){
+    HelpLoading2 = false;
+    ($.ajax({url: 'data/events.json', //http://arsenicum32.github.io/blog1/
+             success: function (obj) { //var obj = jQuery.parseJSON(data);
+            for ( var i =0; i< obj.wr.length ; i++)
+                {
+                  $('#eventsmaster').append(
+                    '<div class="thumbnail"><img data-src="holder.js/300x200" src='+
+                    obj.events[i].src+'><div class="caption"><h3>'+
+                    obj.events[i].name+'</h3><p><span class="glyphicon glyphicon-map-marker"></span>'+
+                    obj.events[i].place+'</p><p><span class="glyphicon glyphicon-time"></span>'+
+                    obj.events[i].time+'</p><p><span class="glyphicon glyphicon-calendar"></span>'+
+                    obj.events[i].date+'</p><p>'+
+                    obj.events[i].description+'</p><p><a href='+
+                    obj.events[i].link+' class="btn btn-primary" role="button">подробнее</a></p></div></div>'
+                  );
                 }
           }})
 

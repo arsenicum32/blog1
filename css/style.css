@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Pompadur; /* Гарнитура шрифта */
+    src: url(font.ttf); /* Путь к файлу со шрифтом */
+   }
+   html {
+    font-family: Pompadur, 'Comic Sans MS', cursive;
+   }
+
 body {
         padding-top: 20px;
         padding-bottom: 40px;
@@ -77,6 +85,10 @@ body {
       }
       .footer p{
         margin-left: 5%;
+      }
+      #events .thumbnail{
+        float:center;
+        margin:auto;
       }
 
 
