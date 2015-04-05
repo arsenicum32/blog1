@@ -94,8 +94,7 @@ function loadevents(loaded)
              success: function (obj) { //var obj = jQuery.parseJSON(data);
             for ( var i =0; i< obj.wr.length ; i++)
                 {
-                  $('#eventsmaster').append(
-                    '<div class="thumbnail"><img data-src="holder.js/300x200" src='+
+                  $('#eventsmaster').append('<div class="thumbnail"><img data-src="holder.js/300x200" src='+
                     obj.events[i].src+'><div class="caption"><h3>'+
                     obj.events[i].name+'</h3><p><span class="glyphicon glyphicon-map-marker"></span>'+
                     obj.events[i].place+'</p><p><span class="glyphicon glyphicon-time"></span>'+
