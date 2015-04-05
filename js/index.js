@@ -54,7 +54,7 @@ function loadblog(loaded)
   if(loaded){
     HelpLoading = false;
     ($.ajax({url: 'data/file.json', //http://arsenicum32.github.io/blog1/
-             success: function (data) { var obj = jQuery.parseJSON(data);
+             success: function (obj) { //var obj = jQuery.parseJSON(data);
             for ( var i =0; i< obj.wr.length ; i++)
                 {
                   $('#listofblog').append('<li class="list-group-item"><h3>'
