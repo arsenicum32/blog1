@@ -2,17 +2,17 @@
 	"wr":[
 	{
 		"time": "10 02 2015",
-		"h3":"Заголовок1",
-		"small":"маленький текст",
-		"des": "описание",
-		"html":"<h1>заебатый код</h1>"
+		"h3":"header1",
+		"small":"small text",
+		"des": "description",
+		"html":"<h1>html code</h1>"
 	},
 	{
 		"time": "10 02 2015",
-		"h3":"Заголовок2",
-		"small":"маленький текст",
-		"des": "описание",
-		"html":"<h1>заебатый код 2</h1>"
+		"h3":"header2",
+		"small":"small text",
+		"des": "description2",
+		"html":"<h1>html code</h1>"
 	}
 	]
 }
