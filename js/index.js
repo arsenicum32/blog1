@@ -15,7 +15,7 @@ $('#events').hide();
 $('#FAQ').hide();
 
 var changing = 0;
-var HelpLoading = true; var HelpLoading2 = true,var HelpLoading3 = true;
+var HelpLoading = true; var HelpLoading2 = true; var HelpLoading3 = true;
 
 //$('body').scrollspy({ target: '.jumbotron' });
 
