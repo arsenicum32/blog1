@@ -62,7 +62,7 @@ function loadblog(loaded)
                   +obj.wr[i].small
                   +'</small></h3><span class="label label-danger" onclick="generatehtml('+obj.wr[i].html.toString()+')">читать</span><small>'
                   +obj.wr[i].des+'</small></li>');
-                  alert(obj.wr[i].html.toString());
+                  alert($.toString(obj.wr[i].html));
                 }
           }})
 
