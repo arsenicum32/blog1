@@ -54,8 +54,18 @@
 <body>
   <div class="row-fluid marketing" id='menu'><!-- visible-xs -->
 
-    <h1 class="text-center hidden-xs">hello</h1>
+    <h1 class="text-center hidden-xs">навигация</h1>
     <div class="col-lg-6 hidden-xs">
+
+        <p><span class="label label-default" onclick='listmenu( $("#first") );menunav();'>вопрос ребром</span></p>
+        <p><span class="label label-default" onclick='listmenu( $("#school") );menunav();'>о школе: что это, как, где</span></p>
+        <p><span class="label label-warning"  onclick='listmenu( $("#answer") );menunav();'>про унисайклинг: для тех, кто в танке</span></p>
+        <p><span class="label label-primary" onclick='listmenu( $("#CONTACT") );menunav();'>контакты</span></p>
+        <p><span class="label label-info" onclick='listmenu( $("#blog") );menunav();loadblog(HelpLoading);'>блог</span></p>
+        <p><span class="label label-danger" onclick='listmenu( $("#events") );menunav();loadevents(HelpLoading3);'>события - присоединяйтесь</span></p>
+        <p><span class="label label-warning" onclick='listmenu( $("#FAQ") );menunav();FAQload(HelpLoading2);' >FAQ</span></p>
+
+
          <h4>Subheading</h4>
          <p>Donec id elit non mi porta gravida at eget metus.
             Maecenas faucibus mollis interdum.</p>
@@ -65,9 +75,6 @@
          <h4>Subheading</h4>
          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
          <span class="label label-primary">Primary</span>
-         <h4>Subheading</h4>
-         <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-         <span class="label label-success">Success</span>
     </div>
 
        <div class="col-lg-6 visible-lg">
@@ -80,6 +87,9 @@
          <h4>Subheading</h4>
          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
          <span class="label label-danger">Danger</span>
+         <h4>Subheading</h4>
+         <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+         <span class="label label-success">Success</span>
        </div>
 
        <ul class="nav nav-pills nav-stacked visible-xs">
@@ -196,7 +206,7 @@ VK.Widgets.Auth("vk_auth", {width: "200px", onAuth: function(data) {
 </div>
 
 
-      <div class="footer">
+      <div class="footer" id='footer'>
         <p> сделанно с любовью <span class="glyphicon glyphicon-heart"></span> &copy; унивышка 2015 <a onclick='friends()'> партнёры </a><a onclick='contacts()'>&nbsp;&nbsp;&nbsp; контакты &nbsp;&nbsp;&nbsp;</a></p>
 
       </div>

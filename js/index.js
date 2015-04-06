@@ -38,10 +38,13 @@ function menunav()
   if(!changing)
   {
     $('#menu').show(200);
+    $('#footer').hide();
+    $('#friends').hide();
     $('.jumbotron').addClass('blur');
     $('body').css('overflow','hidden');
   }else{
     $('#menu').hide(200);
+    $('#footer').show();
     $('.jumbotron').removeClass('blur');
     $('body').css('overflow','auto');
   }
