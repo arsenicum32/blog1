@@ -215,6 +215,7 @@ VK.Widgets.Auth("vk_auth", {width: "200px", onAuth: function(data) {
 
 	         var hue = Math.floor(Math.max(0, e.pageX - element.getBoundingClientRect().left) / element.offsetWidth * 360);
 	          var sat = Math.floor(Math.max(0, e.pageY - element.getBoundingClientRect().top) / element.offsetHeight * 100);
+            sat<50?sat=100-sat: void 0;
 	//var lit = Math.round(y / 4 + 80);
 
 
