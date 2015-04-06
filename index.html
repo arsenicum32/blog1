@@ -53,6 +53,7 @@
 
 <body>
   <div class="row-fluid marketing" id='menu'><!-- visible-xs -->
+
     <h1 class="text-center hidden-xs">hello</h1>
     <div class="col-lg-6 hidden-xs">
          <h4>Subheading</h4>
@@ -90,6 +91,8 @@
          <li onclick='listmenu( $("#events") );menunav();loadevents(HelpLoading3);'><a href="#">события<span class="badge pull-right">today</span></a></li>
          <li onclick='listmenu( $("#FAQ") );menunav();FAQload(HelpLoading2);'><a href="#">FAQ</a></li>
          </ul>
+
+         <canvas />
   </div>
   <a class="navbar-brand" href="#" onclick='menunav()'>
         <img alt="Brand" id='wheel' src="logo.svg">
@@ -197,6 +200,33 @@ VK.Widgets.Auth("vk_auth", {width: "200px", onAuth: function(data) {
         <p> сделанно с любовью <span class="glyphicon glyphicon-heart"></span> &copy; унивышка 2015 <a onclick='friends()'> партнёры </a><a onclick='contacts()'>&nbsp;&nbsp;&nbsp; контакты &nbsp;&nbsp;&nbsp;</a></p>
 
       </div>
+
+
+
+      <script>
+      var element = document.querySelector('canvas');
+      var context = element.getContext('2d');
+
+      element.addEventListener('mousemove', showColor);
+
+      function showColor(e) {
+	       var canvasX = e.pageX - element.getBoundingClientRect().left;
+	        var canvasY = e.pageY - element.getBoundingClientRect().top;
+
+	         var hue = Math.floor(Math.max(0, e.pageX - element.getBoundingClientRect().left) / element.offsetWidth * 360);
+	          var sat = Math.floor(Math.max(0, e.pageY - element.getBoundingClientRect().top) / element.offsetHeight * 100);
+	//var lit = Math.round(y / 4 + 80);
+
+
+	//var hsl = "hsl(" + hue + ", " + sat + "%, " + lit + "%)";
+	           var hsl = "hsl(" + hue + ", 50%, " + sat + "%)";
+
+	            console.log(hsl);
+
+	             context.fillStyle = hsl;
+	              context.fillRect(0, 0, element.offsetWidth, element.offsetHeight);
+              }
+      </script>
      <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

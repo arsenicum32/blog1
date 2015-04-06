@@ -10,6 +10,14 @@ body {
         padding-top: 20px;
         padding-bottom: 40px;
       }
+      canvas {
+        left:51%;
+        top:0;
+      	position: absolute;
+      	width: 49%;
+      	height: 100%;
+
+      }
 
       .navbar-brand{
         z-index:1000;
@@ -128,6 +136,11 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 #first{
+  background: url(../backgroundS.png) center no-repeat;
+  /* -webkit-filter: blur(3px); */
+  /* filter: blur(3px); */
+}
+#first:hover{
   background: url(../background.png) center no-repeat;
   /* -webkit-filter: blur(3px); */
   /* filter: blur(3px); */
