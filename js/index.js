@@ -127,6 +127,10 @@ function listmenu( $me )
   $('#events').hide();
   $('#FAQ').hide();
   $('#first').hide();
+  $('#finish').hide();
+  $('#thankyou').hide();
+  $('#hour').hide();
+  $('#master').hide();
   $me.show();
 }
 function back(){
