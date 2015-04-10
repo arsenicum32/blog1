@@ -22,6 +22,7 @@ var problems = ['сдох кот?','ссесия?','бросила девушк�
 
 $(window).mousemove(function(e) {
     //return $('#c').text("posX:" + e.pageX + " posY:" + e.pageY);
+    if (e.pageY<100)
     $('#bigQ').text( problems[Math.floor(Math.random()*problems.length)] );
   });
 
