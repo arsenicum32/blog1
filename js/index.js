@@ -16,6 +16,10 @@ $('#FAQ').hide();
 
 var changing = 0;
 var HelpLoading = true; var HelpLoading2 = true; var HelpLoading3 = true;
+var problems = ['сдох кот?','ссесия?','бросила девушка?','выгнали из дома?'];
+
+
+$('#bigQ').text( problems[Math.floor(Math.random()*problems.length)] );
 
 //$('body').scrollspy({ target: '.jumbotron' });
 
