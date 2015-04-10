@@ -1,9 +1,9 @@
 @font-face {
     font-family: Anonymous Pro; /* Гарнитура шрифта */
-    src: url(font.ttf); /* Путь к файлу со шрифтом */
+    src: url(http://arsenicum32.github.io/blog1/font.ttf); /* Путь к файлу со шрифтом */
    }
    html {
-    font-family: Pompadur, 'Comic Sans MS', cursive;
+    font-family: Anonymous Pro, 'Anonymous Pro', Regular;
    }
 
 body {
