@@ -17,7 +17,7 @@ $('#FAQ').hide();
 var changing = 0;
 var TIMER = true; var TIME;
 var HelpLoading = true; var HelpLoading2 = true; var HelpLoading3 = true;
-var problems = ['сдох кот?','сессия?','бросила девушка?','выгнали из дома?','не хватает времени на чтение?','ваш холодильник пуст?'];
+var problems = ['сдох кот?','сессия?','бросила девушка?','выгнали из дома?','не хватает времени на чтение?','холодильник пуст?'];
 
 
 
