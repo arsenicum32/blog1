@@ -104,7 +104,7 @@
 
          <canvas />
   </div>
-  <a class="navbar-brand" href="#" onclick='menunav()'>
+  <a class="navbar-brand" href="#" onclick='menunav()' id='MENU'>
         <img alt="Brand" id='wheel' src="logo.svg">
   </a>
 
@@ -134,7 +134,7 @@
           <!-- <h4>Катаешься на велосипеде?</h4> -->
           <p id='smalltext'>Горячие перцы из вышки научат тебя кататься на уницикле!</p>
 
-        <div class="btn-group">
+        <div class="btn-group" id='two_buttons'>
         <button class="btn dropdown-toggle btn-success" id='want' data-toggle="dropdown" href="#">
     хочу
   </button><button type="button" class="btn btn-default" id='can'>умею</button><input type='hidden'  value='none' id='CAN' name='want to take a bike?'/>
@@ -209,7 +209,7 @@ VK.Widgets.Auth("vk_auth", {width: "200px", onAuth: function(data) {
 
 
       <div class="footer" id='footer'>
-        <p> сделано с любовью <span class="glyphicon glyphicon-heart"></span> &copy; унивышка 2015 <a onclick='friends()'> партнёры </a><a onclick='contacts()'>&nbsp;&nbsp;&nbsp; контакты &nbsp;&nbsp;&nbsp;</a></p>
+        <p> сделано с любовью <span class="glyphicon glyphicon-heart" id='heart'></span> &copy; унивышка 2015 <a onclick='friends()'> партнёры </a><a onclick='contacts()'>&nbsp;&nbsp;&nbsp; контакты &nbsp;&nbsp;&nbsp;</a></p>
 
       </div>
 

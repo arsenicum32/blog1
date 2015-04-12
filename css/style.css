@@ -18,6 +18,19 @@ body {
       	height: 100%;
 
       }
+      .draw{
+        top: -100px;
+        /*width:100px;*/
+        /*height:100px;*/
+        /*background:url('../first/button.gif') no-repeat center;*/
+        position:absolute;
+        /*top: -100px;*/
+        z-index:1000;
+        -webkit-animation: rotating 0.5s 0 infinite linear;
+        -moz-animation: rotating 0.5s 0 infinite linear;
+        animation: rotating 0.5s 0 infinite linear;
+        /*animation-duration: 1s;*/
+      }
 
       .navbar-brand{
         z-index:1000;
@@ -217,4 +230,28 @@ transform: rotate(180deg) ;
 -webkit-transform: rotate(360deg) ;
 transform: rotate(360deg) ;
 }
+}
+
+@-webkit-keyframes rotating {
+    0% {
+      -moz-transform: rotate(15deg); /* Для Firefox */
+    -ms-transform: rotate(15deg); /* Для IE */
+    -webkit-transform: rotate(15deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(15deg); /* Для Opera */
+    transform: rotate(15deg);
+      }
+    50% {
+      -moz-transform: rotate(-15deg); /* Для Firefox */
+    -ms-transform: rotate(-15deg); /* Для IE */
+    -webkit-transform: rotate(-15deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-15deg); /* Для Opera */
+    transform: rotate(-15deg);
+      }
+      100% {
+        -moz-transform: rotate(15deg); /* Для Firefox */
+      -ms-transform: rotate(15deg); /* Для IE */
+      -webkit-transform: rotate(15deg); /* Для Safari, Chrome, iOS */
+      -o-transform: rotate(15deg); /* Для Opera */
+      transform: rotate(15deg);
+        }
 }

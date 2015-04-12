@@ -15,15 +15,65 @@ $('#events').hide();
 $('#FAQ').hide();
 
 var changing = 0;
+var TIMER = true; var TIME;
 var HelpLoading = true; var HelpLoading2 = true; var HelpLoading3 = true;
 var problems = ['сдох кот?','ссесия?','бросила девушка?','выгнали из дома?'];
 
 
 
+//$('#two_buttons').prepend("<h1>hello</h1>");
+
+function adding_prev(src,id)
+{
+  return '<img class="draw" src='+src+' id='+id+'/>';
+}
+
+var $button = adding_prev("first/button.gif", "025483");
+var $anyone = adding_prev("first/anyone.gif", "025484");
+var $motivation = adding_prev("first/motivation.gif", "025485");
+var $menu = adding_prev("first/menu.gif", "025486");
+var $heart = adding_prev("first/heart.gif", "025487");
+var $mark = adding_prev("first/mark.gif", "025488");
+// $("#hello").css('left','-500px');
+
+$($button)
+.css('left','0px')
+.appendTo('#two_buttons');
+$($anyone)
+.css('left','100px')
+.appendTo('#two_buttons');
+$($motivation)
+.css('top','100px')
+.appendTo('#smalltext');
+$($menu)
+.css('top','0px')
+.css('left','100px')
+.appendTo('#MENU');
+$($heart)
+.css('top','-100px')
+.css('left','0px')
+.prependTo('#heart');
+$($mark)
+.css('top','-100px')
+.css('left','-200px')
+.prependTo('#heart');
+
+TIME = new Date();
+
+
+
+// adding_prev( '#two_buttons' , "first/anyone.gif" ,['-200px']);
+// adding_prev( '#smalltext' , "first/motivation.gif" ,['-100px']);
+
 $(window).mousemove(function(e) {
+    var nn = new Date();
     //return $('#c').text("posX:" + e.pageX + " posY:" + e.pageY);
     if (e.pageY<100)
     $('#bigQ').text( problems[Math.floor(Math.random()*problems.length)] );
+    if (nn - TIME > 2000 & TIMER){
+      TIMER = false;
+      $('.draw').remove();
+    }
   });
 
 //$('body').scrollspy({ target: '.jumbotron' });
